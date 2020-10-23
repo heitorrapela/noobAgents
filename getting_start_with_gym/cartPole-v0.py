@@ -6,13 +6,6 @@ choose_env = ["CartPole-v0", "MountainCar-v0", "MsPacman-v0", "Hopper-v1"]
 
 env = gym.make(choose_env[env_number])
 
-print(env.action_space)
-
-print(env.observation_space)
-
-print(env.observation_space.high)
-print(env.observation_space.low)
-
 for i_episode in range(20):
 	observation = env.reset()
 
